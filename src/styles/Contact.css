@@ -1,0 +1,43 @@
+.contact-h2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.container-contact{
+    margin-top: 6rem;
+}
+.contact-form{
+    max-width: 50rem;
+    margin: auto;
+    
+}
+
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn-submit{
+    background-color: #879992;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.btn-submit:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.contact-inputs input,textarea{
+    max-width: 50rem;
+    color: #212529;
+    padding: 1.6rem 2.4rem;
+    border: 1px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    ;
+}

@@ -1,0 +1,92 @@
+.contact-box{
+    max-width: 55vw;
+    padding: 2rem 3rem;
+    background-color: rgb(249 249 255);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 44px;
+    transform: translateY(50%);
+    margin: 10% 20% auto auto;
+}
+
+
+.btn-footer button{
+    background-color: rgb(198, 114, 54);
+    color: white;
+    font-size: 14px;
+    padding: 13px 33px;
+    border-radius: 25px;
+    margin-left: 50%;
+    margin-top: -3%;
+}
+.footer{
+    padding: 14rem 0 9rem 0;
+    background-color:rgb(249 249 255);
+
+    
+}
+.container{
+    display: flex;
+    gap: 35px;
+background-color: white;
+color: black;
+max-width: 110rem;
+margin-left: 9%;
+
+}
+
+.container .icons{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 10%;
+  
+}
+
+.container .h3{
+    color: #ffffff;
+    margin-bottom: 2.4rem;
+}
+.container .p{
+    color: #fff;
+}
+
+.footer-social{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social .div{
+    padding: 1rem;
+    border-radius: 50%;
+    border:#fff;
+}
+
+.footer-social .icons{
+    color:#fff;
+    font-size: 2.4rem;
+    position: relative;
+    cursor: pointer;
+}
+.footer-bottom-section{
+    display: grid;
+    background-color: black;
+    color:#fff
+   
+}
+.button{
+    background-color:rgb(198, 114, 54);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

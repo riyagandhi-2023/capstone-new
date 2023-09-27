@@ -1,0 +1,56 @@
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import SignUp from './SignUp'
+
+
+const Loginm = () => {
+
+
+ 
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+  
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(username);
+        
+    }
+
+  return (
+  <>
+  <div className="split">
+    <h1 className="heading"> Login Form </h1>
+    
+    <form className="lg_form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="username"
+        value={username} 
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="Username"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
+        minLength={6}
+        required
+      />
+      <button type="submit">Login</button>
+    </form>
+    <div className="create"><p> Do not have an account? <Link to='/signup'>Create</Link></p></div>
+    </div>
+    
+  
+    </>
+  )
+
+};
+
+export default Loginm;

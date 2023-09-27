@@ -1,0 +1,29 @@
+
+
+html {
+   
+    scroll-behavior: smooth; 
+
+}
+
+body {
+    scrollbar-color: rgb(98 84 243);
+    scrollbar-width: thick;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(24 24 29);
+}
+
+body::-webkit-scrollbar-thumb {
+
+    background: #fff;
+    border: 5px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+

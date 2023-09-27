@@ -1,0 +1,51 @@
+.split{
+    
+    width: 110%;
+  height: 87vh;
+  background-image: url("https://storeliquidators.com/public/front_assets/images/signin-image.jpg");
+  background-repeat: no-repeat;
+  margin-left: 70.1px;
+  margin-right: -70.1px;
+}
+.heading {
+    margin-top: 3vw;
+    margin-left: 39.9vw;
+}
+.lg_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    margin: 10vw 0 0 13vw;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .lg_form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+  }
+  
+  .lg_form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lg_form button:hover {
+    background-color: #0056b3;
+  }
+
+  .create{
+    margin-top: 10px;
+    margin-left: 270px;
+  }

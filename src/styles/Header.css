@@ -1,0 +1,102 @@
+#MainHeader{
+    
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 35px;
+   
+  }
+  
+  .logo{
+      height: 15vh;
+      margin-left: 110px;
+      
+  }
+  
+
+  .column-search {
+    margin-left: 15vh;
+    margin-top: 0.5vh;
+   
+  }
+
+  .input-search input{
+    width: 350px;
+    height: 25px;
+    margin-left: 70px;
+  
+  }
+  
+  .input-search-icon{
+    font-size: 2.3vh;
+    cursor: pointer;
+    margin-top: -3.4vh;
+    margin-left: 59.5vh;
+    position: absolute;
+  }
+
+  .text{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-results-box{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 63.4%;
+    height: 355px;
+    margin-bottom: 70px;
+   
+    
+  }
+  .search-results{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    margin-left: 145px;
+    margin-top: 11vh;
+
+  }
+  .search-results-text{
+    font-size: 2vh;
+    font-family: "Gill Sans", sans-serif;;
+    text-align: center;
+  
+  
+  }
+
+  .search-results img{
+    width: 41vh;
+    height: 27vh;
+    
+  }
+
+.username{
+  margin-top: .5vh;
+  margin-right: -19vh;
+}
+
+.btn-in-out{
+  margin-top: .5vh;
+margin-right: -10vh;
+}
+
+.btn-in-out button{
+  background-color: #232f3e;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.cart-link{
+  margin-top: 1vh;
+margin-left: -10vh;
+font-size: 28px;
+
+}
+
+  
