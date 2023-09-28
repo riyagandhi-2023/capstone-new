@@ -3,8 +3,11 @@ import React, {useState, useEffect} from 'react';
 //importing link
 
 import {LiaShippingFastSolid} from 'react-icons/lia'
-
-
+import banner from '../images/banner.jpg'
+import  iphone15 from '..//images/iphone 15.jpg'
+// import banner from '/src/images/banner.jpg'
+// import banner from '/src/images/banner.jpg'
+// import banner from '/src/images/banner.jpg'
 
 
 const Home =() => {
@@ -26,8 +29,8 @@ const Home =() => {
 
             <div>
         {/* slide show of images */}
-        <img src='/src/images/banner.jpg' className='img-hero'/>
-        <img src='/src/images/iphone 15.jpg' className='img-hero'/>
+        <img src={banner} className='img-hero'/>
+        <img src={iphone15} className='img-hero'/>
         <img src='/src/images/earbuds.png' className='img-hero'/>
         <img src='/src/images/samsung_1.png' className='img-hero'/>
         <img src='/src/images/samsung.jpg' className='img-hero'/>
