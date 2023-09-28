@@ -6,7 +6,6 @@ import {LiaShippingFastSolid} from 'react-icons/lia'
 import banner from '../images/banner.jpg'
 import  iphone15 from '../images/iphone 15.jpg'
 import earbuds from '../images/earbuds.png'
-import samsung_1 from '../images/samsung_1.jpg'
 import samsung from '../images/samsung.jpg'
 import mobile from '../images/iphone.jpeg'
 import desktop from '../images/desktop.jpeg'
@@ -35,7 +34,6 @@ const Home =() => {
         <img src={banner} className='img-hero'/>
         <img src={iphone15} className='img-hero'/>
         <img src={earbuds} className='img-hero'/>
-        <img src={samsung_1} className='img-hero'/>
         <img src={samsung} className='img-hero'/>
         
         </div>
