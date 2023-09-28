@@ -5,7 +5,7 @@ import React, {useState, useEffect} from 'react';
 import {LiaShippingFastSolid} from 'react-icons/lia'
 import banner from '../images/banner.jpg'
 import  iphone15 from '../images/iphone 15.jpg'
-import earbuds from '../images/earbuds.jpg'
+import earbuds from '../images/earbuds.png'
 import samsung_1 from '../images/samsung_1.jpg'
 import samsung from '../images/samsung.jpg'
 import mobile from '../images/iphone.jpeg'
