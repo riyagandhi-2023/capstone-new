@@ -1,8 +1,15 @@
 .Error-body {
     background-image: url("https://freefrontend.com/assets/img/html-funny-404-pages/HTML-Yeti-404-Page.gif");
     background-repeat: no-repeat;
-    margin-top: 0.5%;
+    margin-top: 2%;
     background-position: center;
     background-size: cover;
     padding: 25rem 0;
+    margin-bottom: -19%;
+}
+
+@media (max-width: 768px) {
+    .Error-body {
+        padding: 7rem 0; 
+    }
 }

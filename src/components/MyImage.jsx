@@ -2,6 +2,8 @@
 import React from 'react';
 import { useState } from 'react';
 
+//images forr products detail page
+
 const MyImage = ({ imgs =[{url:""}]}) => {
     const [mainImage, setMainImage] = useState(imgs[0]);
     return (

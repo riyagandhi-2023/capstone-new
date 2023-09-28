@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Navbar from './Navbar';
 import { BsSearch } from "react-icons/bs";
 import { useState } from 'react';
@@ -13,14 +13,14 @@ import { BsFillCartFill } from "react-icons/bs";
 
 
 export default function Header() {
+    
 
-   
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
     const { isAuthenticated, logout, loginWithRedirect, user } = useAuth0();
-
-   
-
+    
+    
+    // Search bar
     const fetchData = (value) => {
         if (value.trim() === "") {
             setResults([]);
@@ -48,16 +48,26 @@ export default function Header() {
         fetchData(value);
     }
 
+    //cart item should pop-up after add refresh
+    const getCartItemCount = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const itemCount = cart.reduce((count, item) => count + item.quantity, 0);
+        return itemCount;
+        
+    };
+
 
     return (
         <>
 
             <header>
                 <div id="MainHeader">
+                    {/* logo and link to homepage */}
                     <NavLink to='/'>
-                        <img src="src/images/logo.png" alt="logo" className="logo" />
+                        <img src="/src/images/logo.png" alt="logo" className="logo" />
                     </NavLink>
 
+                    {/* search bar */}
                     <div className="column-search">
                         <div className="input-search">
                             <input
@@ -73,7 +83,8 @@ export default function Header() {
                         </div>
 
                     </div>
-
+                    
+                    {/* log in/log out and username */}
             
                     <div className='username'> 
 
@@ -90,9 +101,13 @@ export default function Header() {
                         )
                         }
                         </div>
+
+                        {/* cart and item added */}
                         <div className="cart-icon">
                         <NavLink to='/cart' className="navbar-link cart-link" ><BsFillCartFill /> </NavLink>
-                        <span className='cart-total-item'> </span>
+                        {/* {getCartItemCount() > 0 && ( 
+                        <span className='cart-total-item'>{getCartItemCount()}</span>
+                    )} */}
                         </div>
                         
                 </div>

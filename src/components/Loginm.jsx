@@ -3,27 +3,28 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import SignUp from './SignUp'
-
-
+//login page created by me
 const Loginm = () => {
-
-
- 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-  
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(username);
+    
         
     }
 
   return (
   <>
-  <div className="split">
+ <div className="loginm-container">
+  
     <h1 className="heading"> Login Form </h1>
+    <div className="split">
+      <div className="left">
+      <img src="https://storeliquidators.com/public/front_assets/images/signin-image.jpg"/>
+      </div>
     
+    
+      <div className="centerd">
     <form className="lg_form" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -32,6 +33,7 @@ const Loginm = () => {
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Username"
         required
+       
       />
       <input
         type="password"
@@ -41,13 +43,16 @@ const Loginm = () => {
         placeholder="Password"
         minLength={6}
         required
+        
       />
       <button type="submit">Login</button>
     </form>
     <div className="create"><p> Do not have an account? <Link to='/signup'>Create</Link></p></div>
     </div>
-    
-  
+    </div>
+    </div>
+   
+
     </>
   )
 

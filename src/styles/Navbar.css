@@ -7,22 +7,22 @@
     text-transform: uppercase;
     color: #212529;
     transition: color 0.3s linear;
+
  }
  
-  
 
 .navbar-list a{
   position: absolute;
-  left: -109px;
+  left: -100px;
   transition: 0.3s;
-  padding: 15px;
-  width: 139px;
+  padding: 10px;
   text-decoration: none;
   font-size: 15px;
   color: black;
   border-radius: 0 5px 5px 0;
   margin-top: 160px;
   font-weight:200;
+  z-index: 2;
 }
 
 .navbar-list a:hover{
@@ -33,6 +33,18 @@
   top: 20px;
   background-color: #879992;
   
+}
+
+.home-icon{
+  margin-left: 50px;
+  font-size: 19px;
+}
+.product-icon{
+  margin-left: 30px;
+}
+
+.contact-icon{
+  margin-left: 38px;
 }
 
 .products-nav{
@@ -59,7 +71,18 @@
 }
 
 
+@media (max-width: 768px) {
+  .navbar-link {
+    font-size: 2.5vw; 
 
+  .navbar-list a {
+    font-size: 14px; 
+    margin-top: 120px; 
+  }
+  
+  
+}
+}
 
 
 

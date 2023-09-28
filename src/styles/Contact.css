@@ -9,7 +9,7 @@
     margin-top: 6rem;
 }
 .contact-form{
-    max-width: 50rem;
+    max-width: 35rem;
     margin: auto;
     
 }
@@ -32,12 +32,38 @@
 .btn-submit:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.contact-inputs input,textarea{
+.contact-inputs input{
     max-width: 50rem;
     color: #212529;
-    padding: 1.6rem 2.4rem;
+    padding: 1rem 2rem;
     border: 1px solid rgb(0, 0, 0);
     text-transform: uppercase;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    ;
+    
+}
+
+.contact-inputs textarea{
+    width: 35rem;
+    height: 10rem;
+    color: #212529;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+@media (max-width: 768px) {
+    .container-contact {
+        margin-top: 3rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-inputs input,
+    .contact-inputs textarea {
+        max-width: 100%;
+    }
 }

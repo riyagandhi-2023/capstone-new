@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 0.4fr 1fr;
   gap: 1rem;
+  margin-left: 5%;
 }
 
 .image-detail .grid {
@@ -9,7 +10,7 @@
   justify-items: center;
   align-items: center;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
   /* order: 2; */
 }
 
@@ -44,12 +45,16 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .image-detail {
+    grid-template-columns: 1fr; 
+  }
 
-.btn-cart button{
-  margin-top: -5%;
-  background-color: #232f3e;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 15px;
-    cursor: pointer;
+  .box-image-style {
+    max-width: 100%; 
+  }
+
+  .grid-four-column {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }

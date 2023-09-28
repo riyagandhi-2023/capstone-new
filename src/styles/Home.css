@@ -1,8 +1,40 @@
 .img-hero{
-    width: 100%;
-    margin-top: 2%;
+    width: 95%;
+    margin: 50px 20px;
+    transition: transform 0.3s ease-in-out;
 
 }
+.img-heros {
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+  }
+  
+  .img-heros div {
+    display: flex;
+    animation: rotateImages 35s linear infinite; /* Adjust the animation duration as needed */
+  }
+/*   
+  .img-hero {
+    width: 90%;
+    margin: 50px 10px;
+   
+  }
+   */
+  .img-hero:hover {
+    transform: scale(1.05); /* Adjust the scaling factor on hover as desired */
+  }
+  
+  @keyframes rotateImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-470%);
+    }
+  }
+  
 .home{
     padding-top: 5%;
     padding-bottom:2%;
@@ -65,7 +97,7 @@
 }
 
 .services{
-    margin-top: -50px;
+    margin-top: -10px;
     margin-bottom: 3%;
     margin-left: 25%;
     margin-right: 25%;
@@ -81,6 +113,44 @@ border-style: none none solid none;
     margin-left: 42%;
     margin-bottom: 8%;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .img-hero {
+        width: 90%;
+        margin: 50px 10px;
+    }
+
+    .buynow-btn {
+        margin-left: 10%;
+    }
+
+    .Main-banner-content {
+        margin-left: 10%;
+        column-count: 1;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .banner-img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .icon-ship {
+        margin-left: 0;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    .shipping-text {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }
 
 

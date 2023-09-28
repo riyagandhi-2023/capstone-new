@@ -18,12 +18,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 63.4%;
-    height: 355px;
+    height: 335px;
     margin-bottom: 70px;
 }
 
 .product-img {
-    width: 41vh;
+    width: 40.1vh;
     height: 27vh;
    
 }
@@ -32,18 +32,38 @@
     font-size: 2vh;
     font-family: "consolas";
     text-align: center;
+    margin-top: 25px;
 }
 
 .card-content button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
+    background-color: #879992;
     color: white;
-    background-color: #F0F0F0;
-    text-align: center;
+    padding: 5px 14px;
+    border-radius: 25px;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+    border: none;
+    margin-top: 18px;
 
 }
+
+.card-title{
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.card-price{
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .product-content {
+      width: 100%; 
+      margin-left: 0; 
+    }
+     
+  }

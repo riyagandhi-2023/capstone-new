@@ -9,7 +9,8 @@ const Products = () => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     let componentMounted = true;
-    console.log(data);
+
+    //geting all data from api
     useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
@@ -29,6 +30,8 @@ const Products = () => {
 
         getProducts();
     }, []);
+
+    //loading 
     const Loading = () => {
         return (
             <>
@@ -37,17 +40,21 @@ const Products = () => {
         )
     }
 
+    // sorting by category
+
     const filterProduct = (category) => {
         const updateList = data.filter((item) =>
             item.category.toLowerCase() === category.toLowerCase()
         );
         setFilter(updateList);
+        console.log(updateList);
     };
 
     const ShowProducts = () => {
 
         return (
             <>
+            {/* buttons for category */}
                 <div className="buttons-products w3-bar w3-black">
                     <button className="btn-products w3-bar-item w3-button" onClick={() => setFilter(data)}>All</button>
                     <button className="btn-products w3-bar-item w3-button" onClick={() => filterProduct("mobile")}>Mobile</button>
@@ -67,9 +74,9 @@ const Products = () => {
                                             <img src={product.image} className="product-img" alt={product.name} />
                                         </Link>
                                         <div className="card-content">
-                                            <h5 className="card-title" >Name: {product.name.substring(0, 12)}</h5>
-                                            <p className="card-price" >Price: ${product.price}</p>
-                                            <button className="product-button"><Link to={`/product/${product.id}`}>More Info</Link></button>
+                                            <h5 className="card-title" >{product.name.substring(0, 12)}</h5>
+                                            <p className="card-price" >${product.price}</p>
+                                            <Link to={`/product/${product.id}`}><button className="product-button">See Details</button></Link>
                                         </div>
                                     </div>
                                 </div>

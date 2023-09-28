@@ -1,54 +1,40 @@
 /* eslint-disable no-unused-vars */
 import React, {useState, useEffect} from 'react';
 //importing link
-import { Link } from "react-router-dom";
 
 import {LiaShippingFastSolid} from 'react-icons/lia'
 
 
 
 
-// import { LiaShippingFastSolid } from "react-icons/lia"
-
-
-
 const Home =() => {
+
+    // filter category for images at bottom
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('');
     const handleFilter = (category) => {
-        const updateList = data.filter((item) =>
-            item.category.toLowerCase() === category.toLowerCase()
-        )
-        setFilter(updateList);
+        
+        setFilter(category);
         console.log(category)
       };
 
-      useEffect(() => {
-        const getProducts = async () => {
-            const response = await fetch('https://api.pujakaitem.com/api/category');
-                setData(await response.clone().json());
-                setFilter(await response.json());
-                
-            }
-
-
-
-        getProducts();
-    }, []);
     return (
         <>
+    
         <section>
-        <div className='img-heros'>
+        <div className='img-heros active'>
+
             <div>
+        {/* slide show of images */}
         <img src='/src/images/banner.jpg' className='img-hero'/>
+        <img src='/src/images/iphone 15.jpg' className='img-hero'/>
+        <img src='/src/images/earbuds.png' className='img-hero'/>
+        <img src='/src/images/samsung_1.png' className='img-hero'/>
+        <img src='/src/images/samsung.jpg' className='img-hero'/>
+        
         </div>
         </div>
         </section>
-            <section className="home">
-                <div className='buynow-btn'>
-                    <button><Link to={'/products'}> BUY NOW </Link></button>
-                </div>
-                </section>
                 <section>
                     <div className='services'>
                         <LiaShippingFastSolid className='icon-ship'/> 
@@ -59,10 +45,12 @@ const Home =() => {
                 <section>
 
                 <div className="Main-banner">
-                    <img className="banner-img" src="/src/images/iphone.jpeg" alt="main banner" onClick={( ) => handleFilter("mobile")}/>
+                 
+                    <img className="banner-img" src="/src/images/iphone.jpeg" alt="main banner" onClick={( ) => handleFilter('mobile')}/>
                     <img className="banner-img" src="/src/images/desktop.jpeg" alt="main banner" onClick={() => handleFilter("computer")} />
                     <img className="banner-img" src="/src/images/watch.jpeg" alt="main banner" onClick={() => handleFilter("watch")}/>
-                   
+       
+    
 
                     
                 </div>

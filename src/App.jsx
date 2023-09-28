@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Error from './components/Error'
 import Loginm from './components/Loginm'
 import SignUp from "./components/SignUp";
+
 import './App.css'
 import './styles/Navbar.css'
 import './styles/Home.css'
@@ -27,6 +28,8 @@ import './styles/MyImage.css'
 import './styles/Loginm.css'
 import './styles/SignUp.css'
 import './styles/Cart.css'
+
+
 
 
 function App() {
