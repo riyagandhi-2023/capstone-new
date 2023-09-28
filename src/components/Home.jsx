@@ -5,9 +5,12 @@ import React, {useState, useEffect} from 'react';
 import {LiaShippingFastSolid} from 'react-icons/lia'
 import banner from '../images/banner.jpg'
 import  iphone15 from '../images/iphone 15.jpg'
-// import banner from '/src/images/banner.jpg'
-// import banner from '/src/images/banner.jpg'
-// import banner from '/src/images/banner.jpg'
+import earbuds from '../images/earbuds.jpg'
+import samsung_1 from '../images/samsung_1.jpg'
+import samsung from '../images/samsung.jpg'
+import mobile from '../images/iphone.jpeg'
+import desktop from '../images/desktop.jpeg'
+import watch from '../images/watch.jpeg'
 
 
 const Home =() => {
@@ -31,9 +34,9 @@ const Home =() => {
         {/* slide show of images */}
         <img src={banner} className='img-hero'/>
         <img src={iphone15} className='img-hero'/>
-        <img src='/src/images/earbuds.png' className='img-hero'/>
-        <img src='/src/images/samsung_1.png' className='img-hero'/>
-        <img src='/src/images/samsung.jpg' className='img-hero'/>
+        <img src={earbuds} className='img-hero'/>
+        <img src={samsung_1} className='img-hero'/>
+        <img src={samsung} className='img-hero'/>
         
         </div>
         </div>
@@ -49,9 +52,9 @@ const Home =() => {
 
                 <div className="Main-banner">
                  
-                    <img className="banner-img" src="/src/images/iphone.jpeg" alt="main banner" onClick={( ) => handleFilter('mobile')}/>
-                    <img className="banner-img" src="/src/images/desktop.jpeg" alt="main banner" onClick={() => handleFilter("computer")} />
-                    <img className="banner-img" src="/src/images/watch.jpeg" alt="main banner" onClick={() => handleFilter("watch")}/>
+                    <img className="banner-img" src={mobile} alt="main banner" onClick={( ) => handleFilter('mobile')}/>
+                    <img className="banner-img" src={desktop} alt="main banner" onClick={() => handleFilter("computer")} />
+                    <img className="banner-img" src={watch} alt="main banner" onClick={() => handleFilter("watch")}/>
        
     
 

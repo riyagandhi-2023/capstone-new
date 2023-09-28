@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTrashAlt } from 'react-icons/fa'
 import { BiArrowBack } from 'react-icons/bi'
+import minus from '../images/minus.png'
+import add from '../images/add.png'
 
 
 
@@ -111,9 +113,9 @@ const Cart = () => {
                                                 </div>
                                             </div>
                                             <div className="cart-input-container">
-                                                <img src="/src/images/minus.png" className="image-icon-cart" onClick={() => handleDec(cart.id)} />
+                                                <img src= {minus} className="image-icon-cart" onClick={() => handleDec(cart.id)} />
                                                 <input className="cart-input" type="text" value={cart.quantity} readOnly />
-                                                <img src="/src/images/add.png" className="image-icon-cart" onClick={() => handleInc(cart.id)} />
+                                                <img src={add} className="image-icon-cart" onClick={() => handleInc(cart.id)} />
 
                                             </div>
                                             <span className="input-span">$ {cart.price}</span>

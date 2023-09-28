@@ -8,7 +8,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import {IoLogOutOutline} from "react-icons/io5"
 import { IoMdContact } from "react-icons/io";
 import { BsFillCartFill } from "react-icons/bs";
-
+import logo from '../images/logo.png'
 
 
 
@@ -64,7 +64,7 @@ export default function Header() {
                 <div id="MainHeader">
                     {/* logo and link to homepage */}
                     <NavLink to='/'>
-                        <img src="/src/images/logo.png" alt="logo" className="logo" />
+                        <img src={logo} alt="logo" className="logo" />
                     </NavLink>
 
                     {/* search bar */}
