@@ -23,7 +23,7 @@
 }
 
 .product-img {
-    width: 40.1vh;
+    width: 40vh;
     height: 27vh;
    
 }
@@ -42,7 +42,7 @@
     border-radius: 25px;
     cursor: pointer;
     border: none;
-    margin-top: 7px;
+    margin-top: 5px;
 
 }
 
