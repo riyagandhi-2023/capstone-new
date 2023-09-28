@@ -105,9 +105,9 @@ export default function Header() {
                         {/* cart and item added */}
                         <div className="cart-icon">
                         <NavLink to='/cart' className="navbar-link cart-link" ><BsFillCartFill /> </NavLink>
-                        {/* {getCartItemCount() > 0 && ( 
+                        {getCartItemCount() > 0 && ( 
                         <span className='cart-total-item'>{getCartItemCount()}</span>
-                    )} */}
+                    )}
                         </div>
                         
                 </div>
