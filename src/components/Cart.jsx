@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTrashAlt } from 'react-icons/fa'
 import { BiArrowBack } from 'react-icons/bi'
+import emptyCart from '../images/emptyCart.png'
 import minus from '../images/minus.png'
 import add from '../images/add.png'
 
@@ -66,7 +67,7 @@ const Cart = () => {
     if (!carts.length) {
         return <div className="empty">
             <div className="empty-cart">
-                <img src="https://assets.materialup.com/uploads/16e7d0ed-140b-4f86-9b7e-d9d1c04edb2b/preview.png" />
+                <img src={emptyCart} alt="empty-cart"/>
             </div>
             <div className="empty-cart-content">
 
